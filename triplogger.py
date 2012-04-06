@@ -161,6 +161,7 @@ if __name__ == '__main__':
 
     access_token = client.oauth.get_token(code)
     print 'Access token:', access_token
+    client.set_access_token(access_token)
 
   s = sched.scheduler(datetime.now, datetime_sleep)
 
